@@ -1,0 +1,17 @@
+# Core
+torch>=2.1.0
+torchvision>=0.16.0
+numpy>=1.24.0
+scipy>=1.10.0
+opencv-python>=4.8.0
+Pillow>=9.5.0
+
+# Training
+pytorch-lightning>=2.0.0
+tensorboard>=2.14.0
+
+# Hugging Face (for cosine schedule, etc.)
+transformers>=4.30.0
+
+# DINOv2 backbone (install from local repo — see README)
+# pip install -e /path/to/dinov3
