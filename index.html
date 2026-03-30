@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InCaRPose: Transformer-based Relative Pose Estimation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+
+    <section class="max-w-4xl mx-auto px-6 py-16 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">InCaRPose</h1>
+        <h2 class="text-2xl md:text-3xl text-gray-600 mb-8 italic">Transformer-based Relative Pose Estimation for In-Cabin Calibration</h2>
+        
+        <div class="flex justify-center space-x-6 text-lg font-medium">
+            <span class="hover:text-blue-600 cursor-default text-gray-800">Felix Stillger</span>
+        </div>
+
+        <div class="flex justify-center space-x-4 mt-8">
+            <a href="https://github.com/felixstillger/InCaRPose" class="bg-gray-900 text-white px-6 py-2 rounded-full flex items-center hover:bg-gray-700 transition">
+                <i class="fab fa-github mr-2"></i> Code
+            </a>
+            <a href="#" class="bg-red-600 text-white px-6 py-2 rounded-full flex items-center hover:bg-red-500 transition">
+                <i class="far fa-file-pdf mr-2"></i> arXiv
+            </a>
+            <a href=https://drive.google.com/file/d/13RLQhMzPK_Ts59xYG_NjS4OL3CmIPo-C class="bg-gray-900 text-white px-6 py-2 rounded-full flex items-center hover:bg-gray-700 transition"> 
+            <i class="fas fa-database mr-2"></i> Dataset
+            </a>
+
+        </div>
+    </section>
+    <body class="bg-gray-50 text-gray-900 font-sans">
+  <section class="max-w-4xl mx-auto px-6 py-12 text-center">
+        <h3 class="text-2xl font-bold mb-6 italic">Inference & Qualitative Results</h3>
+        <div class="rounded-xl overflow-hidden shadow-2xl border-4 border-white bg-black">
+            <video controls class="w-full h-auto shadow-inner">
+                <source src="page.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <p class="mt-4 text-gray-500">Visualization of relative pose estimation in real-world automotive cabin environments (Translation not correct here).</p>
+    </section>
+    <section class="max-w-4xl mx-auto px-6 py-12">
+        <div class="bg-white p-8 rounded-xl shadow-md">
+            <h3 class="text-2xl font-bold mb-4 border-b pb-2">Abstract</h3>
+            <p class="text-lg leading-relaxed text-gray-700 italic">
+              Camera extrinsic calibration is a fundamental task
+              in computer vision. However, precise relative pose estimation
+              in constrained, highly-distorted environments, such as in-cabin
+              automotive monitoring (ICAM), remains challenging. We present
+              InCaRPose, a Transformer-based architecture designed for robust
+              relative pose prediction between image pairs, which can be used
+              for camera extrinsic calibration. By leveraging frozen backbone
+              features like DINO and a Transformer-based decoder, our model
+              effectively captures the geometric relationship between a refer-
+              ence and target view. Unlike traditional methods, our approach
+              achieves absolute metric scale translation, which is critical for
+              ICAM. In doing so, we specifically address the challenges of
+              highly distorted fisheye cameras in automotive interiors by
+              training exclusively on synthetic data. Our model is capable of
+              strong generalization to real-world cabin environments without
+              having the same camera intrinsics. Additionally, it achieves
+              competitive performance on the 7-Scenes dataset. Despite having
+              limited training data, InCaRPose maintains high precision in
+              both rotation and translation, even with a small ViT-S backbone.
+              This enables real-time performance for time-critical inference.
+              We are publishing our real-world In-Car-Pose dataset, which
+              covers highly distorted images of vehicle interiors.           
+             </p>
+        </div>
+    </section>
+    <section class="max-w-4xl mx-auto px-6 py-12">
+<div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+                <h3 class="text-xl font-semibold mb-4 text-center">Model Architecture Overview</h3>
+            <img src="main_flow_paper.svg" alt="InCaRPose Model Architecture" class="w-full h-auto">
+        </div>
+    </section>
+
+
+
+<section class="max-w-4xl mx-auto px-6 py-12">
+    <div class="bg-white p-8 rounded-xl shadow-md border border-gray-100">
+        <h3 class="text-2xl font-bold mb-4 border-b pb-2 text-center">Dataset</h3>
+
+        <p class="text-lg leading-relaxed text-gray-700 mb-6">
+            We provide the <strong>In-Cabin-Pose</strong>-dataset, designed for 
+            evaluating relative pose estimation models in highly distorted, 
+            constrained automotive interior environments. 
+            The dataset includes fisheye reference–target image pairs along with 
+            ground‑truth relative rotation and translation to the reference frame. Ground-truth is avaiable by ArUco and COLMAP.
+        </p>
+
+        <ul class="text-gray-700 mb-6 list-disc pl-6 space-y-2">
+            <li>In-Cabin Trajectory</li>
+            <li>500+ High‑resolution fisheye images</li>
+            <li>Undistorted images</li>
+            <li>2 Ground‑truth 6‑DoF absolute poses (R, t)</li>
+        </ul>
+
+
+     
+        <div class="flex justify-center">
+            <a href="https://drive.google.com/file/d/13RLQhMzPK_Ts59xYG_NjS4OL3CmIPo-C"
+            class="bg-blue-600 text-white px-6 py-3nload Dataset (Google Drive)">
+        </a>
+        </div>
+
+
+    </div>
+</section>
+
+
+
+  
+
+    <footer class="text-center py-12 text-gray-400 text-sm">
+        © 2026 Felix Stillger | Built for GitHub Project Pages
+    </footer>
+
+</body>
+</html>
