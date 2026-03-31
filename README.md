@@ -3,6 +3,20 @@
 DINOv3-based model for pairwise relative camera pose estimation.  
 Given two RGB images the network predicts the relative 6-DoF pose (rotation as a unit quaternion + translation vector).
 
+<p align="center">
+  <a href="https://arxiv.org/abs/XXXX.XXXXX">
+    <img src="https://img.shields.io/badge/arXiv-Paper-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv Paper">
+  </a>
+  &nbsp;
+  <a href="https://drive.google.com/drive/XXXX">
+    <img src="https://img.shields.io/badge/Dataset-Google%20Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Dataset">
+  </a>
+  &nbsp;
+  <a href="https://felixstillger.github.io/InCaRPose/">
+    <img src="https://img.shields.io/badge/Project%20Page-InCaRPose-222222?style=for-the-badge&logo=github&logoColor=white" alt="Project Page">
+  </a>
+</p>
+
 ---
 
 ## Table of Contents
