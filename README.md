@@ -299,8 +299,9 @@ camera_ready/
 
 ## Acknowledgements
 
-- **DINOv3**: Based on Oquab et al., *DINOv2: Learning Robust Visual Features without Supervision*, 2023.  
+- **DINOv3**: Siméoni et al., *DINOv3*, arXiv preprint arXiv:2508.10104, 2025. https://github.com/facebookresearch/dinov3  
 - **7Scenes**: Shotton et al., *Scene Coordinate Regression Forests for Camera Relocalization in RGB-D Images*, CVPR 2013.  
 - **Cambridge Landmarks**: Kendall et al., *PoseNet: A Convolutional Network for Real-Time 6-DOF Camera Relocalization*, ICCV 2015.  
-- **RelPoseNet** (7Scenes splits): <https://github.com/AaltoVision/RelPoseNet>  
-- **RPNet** (Cambridge splits): <https://github.com/ensv/RPNet>
+- **RelPoseNet** (7Scenes splits): https://github.com/AaltoVision/RelPoseNet  
+- **RPNet** (Cambridge splits): https://github.com/ensv/RPNe
+
