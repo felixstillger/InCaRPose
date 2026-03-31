@@ -3,7 +3,6 @@
 Transformer-based model for pairwise relative camera pose estimation.  
 Given two RGB images the network predicts the relative 6-DoF pose (rotation as a unit quaternion + translation vector). Specifically designed for in-cabin but applicable beyond this setting.
 
-
 <p align="center">
   <a href="https://arxiv.org/abs/XXXX.XXXXX">
     <img src="https://img.shields.io/badge/arXiv-Paper-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white" alt="arXiv Paper">
