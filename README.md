@@ -316,5 +316,5 @@ camera_ready/
 - **7Scenes**: Shotton et al., *Scene Coordinate Regression Forests for Camera Relocalization in RGB-D Images*, CVPR 2013.  
 - **Cambridge Landmarks**: Kendall et al., *PoseNet: A Convolutional Network for Real-Time 6-DOF Camera Relocalization*, ICCV 2015.  
 - **RelPoseNet** (7Scenes splits): https://github.com/AaltoVision/RelPoseNet  
-- **RPNet** (Cambridge splits): https://github.com/ensv/RPNe
+- **RPNet** (Cambridge splits): https://github.com/ensv/RPNet
 
